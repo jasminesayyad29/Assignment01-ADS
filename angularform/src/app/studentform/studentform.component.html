@@ -1,0 +1,40 @@
+<div class="up-div">
+  <h2>Available Tables</h2>
+  <ul>
+    <li *ngFor="let table of tables" (click)="selectedTable = table">
+      {{ table }}
+    </li>
+  </ul>
+
+  <p *ngIf="selectedTable">Selected Table: {{ selectedTable }}</p>
+</div>
+
+<div class="low-div">
+  <h1>Student Information Form</h1>
+  <form #studentForm="ngForm" (ngSubmit)="onSubmit(studentForm)" class="formdata">
+
+    <div class="form-group">
+      <label for="prn">PRN</label>
+      <input id="prn" type="text" placeholder="Enter PRN" name="prn" ngModel required>
+    </div>
+  
+    <div class="form-group">
+      <label for="name">Student Name</label>
+      <input id="name" type="text" placeholder="Enter Name" name="name" ngModel required>
+    </div>
+  
+    <div class="form-group">
+      <label for="branch">Branch</label>
+      <input id="branch" type="text" placeholder="Enter Branch" name="branch" ngModel required>
+    </div>
+  
+    <div class="form-group">
+      <label for="phone">Phone No.</label>
+      <input id="phone" type="text" placeholder="Mobile No." name="phone" ngModel required>
+    </div>
+  
+    <button type="submit">Submit</button>
+  
+  </form>
+  
+</div>

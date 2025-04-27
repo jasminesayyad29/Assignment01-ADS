@@ -1,0 +1,120 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f8fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.up-div {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  max-width: 520px;
+  width: 90%;
+  border: 1px solid #dcdcdc;
+}
+
+.low-div{
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dcdcdc;
+  max-width: 520px;
+  width: 90%;
+  padding: 30px 40px;
+  border-radius: 16px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+ul li {
+  background-color: #ecf6fb;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+ul li:hover {
+  background-color: #d0ebfb;
+  transform: scale(1.02);
+}
+
+p {
+  text-align: center;
+  font-weight: 500;
+  color: #34495e;
+  margin-top: 15px;
+}
+
+/* Form Styling */
+.formdata {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Each label+input pair */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  width: 120px; /* fixed width for all labels */
+  color: #333;
+  font-weight: 600;
+  text-align: right;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+}
